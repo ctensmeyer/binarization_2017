@@ -1,9 +1,11 @@
-# binarization_2017
+# Binarization
 
 This repo contains the code and models described in [Document Image Binarization with Fully Convolutional Neural Networks](https://arxiv.org/abs/1708.03276).  There are two sets of 5 models.  One trained on [DIBCO](https://vc.ee.duth.gr/dibco2017/) images, and the other trained on [Palm Leaf Manuscripts (PML)](http://amadi.univ-lr.fr/ICFHR2016_Contest/index.php/challenge-1).  Additional info on these models can be found [here](
 https://ctensmeyer.github.io/publication/document_image_binarization_with_fully_convolutional_neural_networks/).  You may also be interested in my submission to the DIBCO 2017 competition, located [here](https://github.com/ctensmeyer/dibco_2017).
 
 This code depends on a number of python libraries: numpy, scipy, cv2 (python wrapper for opencv), and caffe [(my custom fork)](https://github.com/ctensmeyer/caffe).
+
+## Docker
 
 For those who don't want to install the dependencies, I have created a docker image to run this code. You must have the [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) plugin installed to use it though you can still run our models on CPU (not recommended).
 
@@ -20,6 +22,7 @@ There is no need to download the containers ahead of time.  If you have docker a
 
 For some reason, the docker image gives a error (related to CuDNN) for binarize_plm.py with all 5 models, so the image was created using only 4 of the models (differeces should be negligible).
 
+## Citation
 
 If you find this code useful to your research, please cite our paper:
 
