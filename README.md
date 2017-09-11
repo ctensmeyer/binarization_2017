@@ -18,6 +18,8 @@ nvidia-docker run -v $HOST_WORK_DIRECTORY:/data tensmeyerc/icdar2017:binarizatio
 `$DEVICE_ID` is the ID of the GPU you want to use (typically 0).  If omitted, then the models are run in CPU mode.
 There is no need to download the containers ahead of time.  If you have docker and nvidia-docker installed, running the above commands will pull the docker image (~2GB) if it has not been previously pulled.
 
+For some reason, the docker image gives a error (related to CuDNN) for binarize_plm.py with all 5 models, so the image was created using only 4 of the models (differeces should be negligible).
+
 
 If you find this code useful to your research, please cite our paper:
 
