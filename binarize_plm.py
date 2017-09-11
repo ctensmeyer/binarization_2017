@@ -22,7 +22,7 @@ PADDING_SIZE = 21
 # number of subwindows processed by a network in a batch
 # Higher numbers speed up processing (only marginally if BATCH_SIZE > 16)
 # The larger the batch size, the more memory is consumed (both CPU and GPU)
-BATCH_SIZE=2
+BATCH_SIZE=1
 
 LEFT_EDGE = -2
 TOP_EDGE = -1
